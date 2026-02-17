@@ -1,5 +1,5 @@
-import Button from "../common/Button";
-import SearchBar from "../common/SearchBar";
+import Button from "@components/Button";
+import SearchBar from "@components/SearchBar";
 
 export default function HeroSection({}) {
   return (

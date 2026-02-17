@@ -1,18 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-const config = {
+export default {
   content: [
+    "./app/**/*.{js,jsx,ts,tsx}",
     "./pages/**/*.{js,jsx,ts,tsx}",
     "./components/**/*.{js,jsx,ts,tsx}",
     "./styles/**/*.{css,scss}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        hero: "url('/images/bg-hero-section.svg')",
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
-
-export default config;

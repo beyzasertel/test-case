@@ -1,7 +1,10 @@
 import Button from "../common/Button";
 import SearchBar from "../common/SearchBar";
 
+import { useTranslation } from "next-i18next";
+
 export default function HeroSection({}) {
+  const { t } = useTranslation("common");
   return (
     <div className="bg-hero bg-cover py-4">
       <div className="container w-full flex justify-end items-center gap-2 md:gap-4 px-2 md:px-0 py-4">
@@ -17,14 +20,14 @@ export default function HeroSection({}) {
       <div className="flex flex-col items-center">
         <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-4">
           <div className="flex-1 min-w-0">
-            <SearchBar />
+            <SearchBar placeholder={t("search_placeholder")} />
           </div>
 
           <div className="flex flex-col items-center">
             <Button variant="image">&nbsp;</Button>
 
             <a href="#" className="mt-2 text-sm text-white underline">
-              Detaylı Arama
+              {t("advanced_search")}
             </a>
           </div>
         </div>

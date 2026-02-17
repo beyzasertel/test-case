@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --color-dark-grey: #626160;
+}
+
 @layer utilities {
   .bg-hero {
     background-image: url("/images/bg-hero-section.svg");

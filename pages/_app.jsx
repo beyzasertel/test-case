@@ -1,3 +1,4 @@
+import "@/styles/tailwind.css";
 import "@/styles/globals.scss";
 
 import { ThemeProvider, createTheme } from "@mui/material/styles";

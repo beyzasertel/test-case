@@ -1,0 +1,30 @@
+.custom-btn.MuiButton-root {
+  text-transform: none;
+  box-shadow: none;
+  font-weight: 600;
+}
+
+/* IMAGE */
+.custom-btn--image.MuiButton-root {
+  background-color: #fff;
+  background-image: url("/images/bg-btn.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 15px 50px;
+  border-radius: 28px;
+  overflow: hidden;
+  background-size: auto 80%;
+
+}
+
+/* PRIMARY */
+.custom-btn--primary.MuiButton-root {
+  background-color: transparent;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 18px;
+  border: 1px solid #fff;
+  text-align: center;
+}

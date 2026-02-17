@@ -30,6 +30,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "components/search/jobList.jsx", "components/search/jobDetail.jsx", "components/search/filterPanel.jsx", "components/profile/skillsSection.jsx", "components/profile/profileSidebar.jsx", "components/profile/experienceSection.jsx", "components/home/heroSection.jsx", "components/home/featuredJobs.jsx", "components/home/companyLogos.jsx", "components/common/searchBar.jsx", "components/common/header.jsx", "components/common/footer.jsx", "components/common/button.jsx"  ],
+, "components/search/JobList.jsx", "components/search/JobDetail.jsx", "components/search/FilterPanel.jsx", "components/profile/SkillsSection.jsx", "components/profile/ProfileSidebar.jsx", "components/profile/ExperienceSection.jsx", "components/home/HeroSection.jsx", "components/home/FeaturedJobs.jsx", "components/home/CompanyLogos.jsx", "components/common/SearchBar.jsx", "components/common/Header.jsx", "components/common/Footer.jsx", "components/common/Button.jsx"  ],
   "exclude": ["node_modules"]
 }

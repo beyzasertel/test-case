@@ -6,7 +6,11 @@ const config = {
     "./styles/**/*.{css,scss}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        hero: "url('/images/bg-hero-section.svg')",
+      },
+    },
   },
   plugins: [],
 };

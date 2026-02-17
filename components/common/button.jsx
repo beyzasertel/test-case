@@ -12,6 +12,9 @@ export default function Button({
       variant="text"
       disableRipple
       className={`custom-btn custom-btn--${variant}`}
+      sx={{
+        height: { xs: 30, md: 50 },
+      }}
       {...props}
     >
       {children}

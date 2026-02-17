@@ -27,26 +27,26 @@ export default function SearchBar({
           bgcolor: "white",
           borderRadius: "999px",
 
-          /* Border'ı kapat */
           "& fieldset": {
             border: "none",
           },
 
-          /* Hover border kapat */
           "&:hover fieldset": {
             border: "none",
           },
 
-          /* Focus border kapat */
           "&.Mui-focused fieldset": {
             border: "none",
           },
 
-          /* İç padding'i güzelleştir */
           "& .MuiOutlinedInput-root": {
             borderRadius: "999px",
             paddingRight: "12px",
-            width: "350px",
+            width: {
+              xs: 250,
+              md: 350,
+            },
+            height: { xs: 40, md: 50 },
           },
         }}
         slotProps={{

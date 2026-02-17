@@ -1,10 +1,10 @@
-import Button from "@components/Button";
-import SearchBar from "@components/SearchBar";
+import Button from "../common/Button";
+import SearchBar from "../common/SearchBar";
 
 export default function HeroSection({}) {
   return (
-    <div className="bg-hero bg-cover bg-center py-4">
-      <div className="container w-full flex justify-end items-center gap-4 py-4">
+    <div className="bg-hero bg-cover py-4">
+      <div className="container w-full flex justify-end items-center gap-2 md:gap-4 px-2 md:px-0 py-4">
         <Button>Kayıt Ol</Button>
         <Button>Giriş Yap</Button>
       </div>
@@ -15,7 +15,7 @@ export default function HeroSection({}) {
       </div>
 
       <div className="flex flex-col items-center">
-        <div className="flex items-start justify-center gap-4">
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-4">
           <div className="flex-1 min-w-0">
             <SearchBar />
           </div>

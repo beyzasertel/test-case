@@ -1,3 +1,6 @@
+@import "./button.css";
+@import "tailwindcss";
+
 .custom-btn.MuiButton-root {
   text-transform: none;
   box-shadow: none;
@@ -9,7 +12,7 @@
   border-radius: 999px !important;
   box-shadow: none !important;
   text-transform: none !important;
-  min-width: 180px !important;  
+  min-width: 180px !important;
   background-image: url("/images/bg-btn.svg");
   background-size: contain;
   background-position: center;
@@ -18,7 +21,6 @@
   border-radius: 28px;
   overflow: hidden;
   background-size: auto 50%;
-
 }
 
 .custom-btn--primary.MuiButton-root {
@@ -30,7 +32,6 @@
   text-align: center;
 }
 
-
 .custom-btn--pill.MuiButton-root {
   background-color: #e9e9e9;
   color: #666768;
@@ -41,4 +42,3 @@
   text-align: center;
   flex-shrink: 0;
 }
-

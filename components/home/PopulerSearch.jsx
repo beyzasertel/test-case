@@ -1,4 +1,4 @@
-import Button from "../components/common/Button";
+import Button from "../common/Button";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 

@@ -1,5 +1,5 @@
 import "@/styles/tailwind.css";
-import "@/styles/globals.scss";
+import "@/styles/globals.css";
 
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";

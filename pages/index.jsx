@@ -1,6 +1,7 @@
 import { useTranslation } from "next-i18next";
 import HeroSection from "../components/home/HeroSection";
 import Footer from "../components/common/Footer";
+import PopularSearch from "../components/populerSearch";
 
 export default function Home() {
   const { t } = useTranslation("common");
@@ -8,6 +9,7 @@ export default function Home() {
   return (
     <>
       <HeroSection></HeroSection>
+      <PopularSearch></PopularSearch>
       <Footer></Footer>
     </>
   );

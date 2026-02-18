@@ -3,13 +3,13 @@ import SearchBar from "../common/SearchBar";
 
 import { useTranslation } from "next-i18next";
 
-export default function HeroSection({}) {
+export default function HeroSection() {
   const { t } = useTranslation("common");
   return (
     <div className="bg-hero bg-cover py-4">
       <div className="container w-full flex justify-end items-center gap-2 md:gap-4 px-2 md:px-0 py-4">
-        <Button>Kayıt Ol</Button>
-        <Button>Giriş Yap</Button>
+        <Button>{t("sign_up")}</Button>
+        <Button>{t("sign_in")}</Button>
       </div>
 
       <div className="flex items-center flex-col gap-2 p-12">

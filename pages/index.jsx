@@ -3,47 +3,35 @@ import HeroSection from "../components/home/HeroSection";
 import Footer from "../components/common/Footer";
 import PopularSearch from "../components/home/PopulerSearch";
 import FeaturedJobsCarousel from "../components/home/FeaturedJobsCarousel";
+import { getFeaturedJobs } from "../services/featuredJobsService";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const { t } = useTranslation("common");
-  const items = [
-    { id: "1", title: "IT Müdürü", company: "Bosch", logoText: "B/S/H/" },
-    {
-      id: "2",
-      title: "Front-end Developer",
-      company: "Aktif Bank",
-      logoText: "aktifbank",
-    },
-    {
-      id: "3",
-      title: "Back-end Developer",
-      company: "Akbank",
-      logoText: "AKBANK",
-    },
-    {
-      id: "4",
-      title: ".NET Developer",
-      company: "Arçelik",
-      logoText: "arçelik",
-    },
-    {
-      id: "5",
-      title: "Junior .NET Developer",
-      company: "Allianz",
-      logoText: "Allianz",
-    },
-    {
-      id: "6",
-      title: "Sales Manager",
-      company: "Bezmialem Vakıf Üniv.",
-      logoText: "BVU",
-    },
-  ];
+
+  const [featuredJobs, setFeaturedJobs] = useState([]);
+
+  useEffect(() => {
+    getFeaturedJobs()
+      .then((res) => {
+        console.log("URL?", res.config?.baseURL, res.config?.url);
+        console.log("DATA:", res.data);
+        setFeaturedJobs(res.data);
+      })
+      .catch((err) =>
+        console.log(
+          "ERR:",
+          err?.message,
+          err?.response?.status,
+          err?.response?.data,
+        ),
+      );
+  }, []);
   return (
     <>
       <HeroSection></HeroSection>
       <PopularSearch></PopularSearch>
-      <FeaturedJobsCarousel items={items} />
+      <FeaturedJobsCarousel items={featuredJobs} />
       <Footer></Footer>
     </>
   );

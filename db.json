@@ -1,0 +1,39 @@
+{
+  "featuredJobs": [
+    {
+      "id": 1,
+      "title": "IT Müdürü",
+      "company": "Bosch",
+     "logo": "/images/bsh-logo.png"
+    },
+     {
+      "id": 2,
+      "title": "Front-end Dev…",
+      "company": "Aktif Bank Genel Mü…",
+      "logo": "/images/aktifbank-logo.png"
+    },{
+      "id": 3,
+      "title": "Back-end Dev…",
+      "company": "Akbank Bank Genel…",
+      "logo": "/images/akbank-logo.png"
+    },
+    {
+      "id": 4,
+      "title": ".net Developer",
+      "company": "Arçelik",
+      "logo": "/images/arcelik-logo.png"
+    },
+    {
+      "id": 5,
+      "title": "Junior .net Dev…",
+      "company": "Allianz",
+      "logo": "/images/allianz-logo.png"
+    },
+    {
+      "id": 6,
+      "title": "Sales Manager",
+      "company": "Bezmialem Vakıf Ün…",
+      "logo": "/images/bezmialem-logo.png"
+    }
+  ]
+}

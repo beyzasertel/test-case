@@ -35,5 +35,20 @@
       "company": "Bezmialem Vakıf Ün…",
       "logo": "/images/bezmialem-logo.png"
     }
+  ],
+  
+  "jobSolutions": [
+    {
+      "id": 1,
+      "title": "İş Ara",
+      "subtitle": "Profilini Oluştur",
+      "logo": "/images/search-job.png"
+    },
+    {
+      "id": 2,
+      "title": "İş Veren Çözümleri",
+      "company": "",
+      "logo": "/images/solutions.png"
+    }
   ]
 }

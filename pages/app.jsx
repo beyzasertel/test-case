@@ -4,9 +4,6 @@ import "@/styles/globals.css";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
-import { appWithTranslation } from "next-i18next";
-import nextI18NextConfig from "../next-i18next.config";
-
 const theme = createTheme({
   palette: {
     primary: {
@@ -27,4 +24,4 @@ function App({ Component, pageProps }) {
   );
 }
 
-export default appWithTranslation(App, nextI18NextConfig);
+export default App;
